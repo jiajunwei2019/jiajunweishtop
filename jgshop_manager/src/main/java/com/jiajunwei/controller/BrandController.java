@@ -21,6 +21,7 @@ public class BrandController {
 	@RequestMapping("list")
 	public String list(HttpServletRequest request) {
 		List<Brand> list = bs.list();
+		System.out.println("====");
 		list.forEach(x -> {
 			System.out.println("x is " + x);
 		});
