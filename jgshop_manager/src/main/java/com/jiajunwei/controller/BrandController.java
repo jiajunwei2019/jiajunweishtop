@@ -17,17 +17,13 @@ public class BrandController {
 
 	@Reference
 	BrandService bs;
-
+	
 	@RequestMapping("list")
 	public String list(HttpServletRequest request) {
 		List<Brand> list = bs.list();
-		System.out.println("====");
-		System.out.println("===");
-		list.forEach(x -> {
-			System.out.println("x is " + x);
-		});
-		return "list";
-
+		list.forEach(x->{System.out.println("x is " + x);});
+		request.setAttribute("list", list); 
+		return "brand/list";
 	}
-
+	
 }

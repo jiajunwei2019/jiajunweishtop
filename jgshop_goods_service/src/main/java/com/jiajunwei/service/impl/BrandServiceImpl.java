@@ -1,5 +1,6 @@
 package com.jiajunwei.service.impl;
 
+
 import java.util.List;
 
 import org.apache.dubbo.config.annotation.Service;
@@ -12,7 +13,7 @@ import com.jiajunwei.service.BrandService;
 
 @Service(interfaceClass = BrandService.class)
 public class BrandServiceImpl implements BrandService {
-
+	
 	@Autowired
 	BrandDao brandDao ;
 
@@ -51,4 +52,5 @@ public class BrandServiceImpl implements BrandService {
 		// TODO Auto-generated method stub
 		return brandDao.findById(id);
 	}
+
 }

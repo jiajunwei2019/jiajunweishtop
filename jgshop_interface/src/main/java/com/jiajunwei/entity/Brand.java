@@ -1,6 +1,5 @@
 package com.jiajunwei.entity;
 
-
 import java.io.Serializable;
 
 /**
@@ -53,4 +52,3 @@ public class Brand  implements Serializable{
 	
 
 }
-
