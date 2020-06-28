@@ -23,7 +23,7 @@ public class CategoryServiceImpl  implements CategoryService {
 	@Override
 	public int add(Category category) {
 		// TODO Auto-generated method stub
-		System.out.println("--");
+		
 		return catDao.add(category);
 	}
 
