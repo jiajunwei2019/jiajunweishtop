@@ -9,9 +9,6 @@ import java.io.Serializable;
  */
 public class Brand  implements Serializable{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 7286961587651453953L;
 	
 	Integer id;
